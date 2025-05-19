@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 55.6% 91.6%; /* Light beige #F5F5DC */
+    --foreground: 27 29.8% 25%; /* Dark brown #5A4232 */
+    --card: 56 100% 97%; /* Creamier off-white #FFFDEE */
+    --card-foreground: 27 29.8% 25%; /* Dark brown */
+    --popover: 56 100% 97%; /* Creamier off-white */
+    --popover-foreground: 27 29.8% 25%; /* Dark brown */
+    --primary: 27 29.8% 50.4%; /* Rich coffee-brown #A67B5B */
+    --primary-foreground: 56 100% 95%; /* Creamy white #FFFBEB */
+    --secondary: 27 29.8% 70%; /* Lighter brown #C4A992 */
+    --secondary-foreground: 27 29.8% 25%; /* Dark brown */
+    --muted: 60 55.6% 85%; /* Muted beige #EDEADD */
+    --muted-foreground: 27 29.8% 45%; /* Muted brown #8C6F5A */
+    --accent: 56 100% 90.6%; /* Creamy white #FFFDD0 */
+    --accent-foreground: 27 29.8% 30%; /* Darker brown on accent #6B4F3A */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 27 29.8% 80%; /* Lighter brown border #D3BCA9 */
+    --input: 60 55.6% 95%; /* Very light beige for input #FBFBEF */
+    --ring: 27 29.8% 50.4%; /* Rich coffee-brown for ring */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar specific theme (less critical for this app, but updated for consistency) */
+    --sidebar-background: 27 29.8% 40%; /* Darker coffee brown #825F46 */
+    --sidebar-foreground: 60 55.6% 91.6%; /* Light beige #F5F5DC */
+    --sidebar-primary: 27 29.8% 60%; /* Lighter primary #B98C6F */
+    --sidebar-primary-foreground: 56 100% 95%; /* Creamy white #FFFBEB */
+    --sidebar-accent: 27 29.8% 50%; /* Primary brown #A67B5B for hover */
+    --sidebar-accent-foreground: 56 100% 95%; /* Creamy white */
+    --sidebar-border: 27 29.8% 30%; /* Very dark brown #6B4F3A */
+    --sidebar-ring: 27 29.8% 50.4%;
+  }
+
+  .dark {
+    --background: 27 29.8% 10%; /* Dark coffee bean */
+    --foreground: 60 55.6% 85%; /* Muted beige for text */
+    --card: 27 29.8% 15%; /* Darker card */
+    --card-foreground: 60 55.6% 85%;
+    --popover: 27 29.8% 15%;
+    --popover-foreground: 60 55.6% 85%;
+    --primary: 27 29.8% 65%; /* Lighter coffee brown for dark mode primary */
+    --primary-foreground: 27 29.8% 10%; /* Dark for text on primary */
+    --secondary: 27 29.8% 30%; /* Dark muted brown */
+    --secondary-foreground: 60 55.6% 85%;
+    --muted: 27 29.8% 25%;
+    --muted-foreground: 60 55.6% 70%;
+    --accent: 56 100% 75%; /* Muted creamy for dark accent */
+    --accent-foreground: 27 29.8% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 27 29.8% 20%;
+    --input: 27 29.8% 20%;
+    --ring: 27 29.8% 65%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 27 29.8% 12%;
+    --sidebar-foreground: 60 55.6% 88%;
+    --sidebar-primary: 27 29.8% 70%;
+    --sidebar-primary-foreground: 27 29.8% 5%;
+    --sidebar-accent: 27 29.8% 25%;
+    --sidebar-accent-foreground: 60 55.6% 88%;
+    --sidebar-border: 27 29.8% 20%;
+    --sidebar-ring: 27 29.8% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

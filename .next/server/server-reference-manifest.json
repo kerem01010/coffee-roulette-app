@@ -1,0 +1,17 @@
+{
+  "node": {
+    "40d9ab86851d0b6f5460bcef2dd3f84f426c849714": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/suggest-coffee.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "d8Ylyn5p9mZzdaJwj/uqxHC73mlRRQG3Gj3ONp80prw="
+}

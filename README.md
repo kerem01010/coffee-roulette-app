@@ -1,5 +1,5 @@
 
-# ☕ Coffee Roulette 룰렛
+# ☕ Coffee Roulette
 
 Welcome to Coffee Roulette! Let fate (and a little bit of AI) decide your next cup of coffee. This application helps you discover new coffee recipes based on the ingredients you have on hand and your flavor preferences.
 

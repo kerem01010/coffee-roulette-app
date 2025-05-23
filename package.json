@@ -8,6 +8,8 @@
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
     "build": "next build",
     "start": "next start",
+    "docker:start": "concurrently \"npm:genkit:serve\" \"npm:start\"",
+    "genkit:serve": "genkit start -- tsx src/ai/dev.ts",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
@@ -60,8 +62,9 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
     "genkit-cli": "^1.8.0",
-    "postcss": "^8",
+    "postcss": "^8.4.40",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
